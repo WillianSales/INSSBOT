@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INSSBOT.Domain", "INSSBOT.Domain\INSSBOT.Domain.csproj", "{3B373B86-32D3-40AB-811E-534EAA5DF1BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{FB3BC598-B2F2-45E9-A5E8-6C783BBB7DF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{A09A271A-B5D5-4F28-9FC5-D97E2D7DD0A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Repository", "4.1 - Repository", "{74A558BC-6CC2-4E51-AC8F-66401C180C65}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{EEE87128-BAB3-473A-9051-E1FDF2F06BC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{EE131A9E-0026-49D2-B3DA-0F38408217B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{06723239-0A86-41D2-B969-A3432D63FD10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - UI", "0 - UI", "{682A10E6-B644-4DC8-96F3-BC9A56CE6620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INSSBOT.Repository", "INSSBOT.Repository\INSSBOT.Repository.csproj", "{8F943263-CB96-4EC4-B98B-E9925214DE03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INSSBOT.CrossCutting.IoC", "INSSBOT.CrossCutting.IoC\INSSBOT.CrossCutting.IoC.csproj", "{A3B65435-7147-4991-909A-B6CEE35D9B9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INSSBOT.Application", "INSSBOT.Application\INSSBOT.Application.csproj", "{26078473-A315-41D6-BCC3-6CCD00F61FD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B373B86-32D3-40AB-811E-534EAA5DF1BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B373B86-32D3-40AB-811E-534EAA5DF1BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B373B86-32D3-40AB-811E-534EAA5DF1BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B373B86-32D3-40AB-811E-534EAA5DF1BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F943263-CB96-4EC4-B98B-E9925214DE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F943263-CB96-4EC4-B98B-E9925214DE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F943263-CB96-4EC4-B98B-E9925214DE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F943263-CB96-4EC4-B98B-E9925214DE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B65435-7147-4991-909A-B6CEE35D9B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B65435-7147-4991-909A-B6CEE35D9B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B65435-7147-4991-909A-B6CEE35D9B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B65435-7147-4991-909A-B6CEE35D9B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26078473-A315-41D6-BCC3-6CCD00F61FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26078473-A315-41D6-BCC3-6CCD00F61FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26078473-A315-41D6-BCC3-6CCD00F61FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26078473-A315-41D6-BCC3-6CCD00F61FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3B373B86-32D3-40AB-811E-534EAA5DF1BA} = {FB3BC598-B2F2-45E9-A5E8-6C783BBB7DF1}
+		{74A558BC-6CC2-4E51-AC8F-66401C180C65} = {A09A271A-B5D5-4F28-9FC5-D97E2D7DD0A5}
+		{EEE87128-BAB3-473A-9051-E1FDF2F06BC2} = {A09A271A-B5D5-4F28-9FC5-D97E2D7DD0A5}
+		{8F943263-CB96-4EC4-B98B-E9925214DE03} = {74A558BC-6CC2-4E51-AC8F-66401C180C65}
+		{A3B65435-7147-4991-909A-B6CEE35D9B9D} = {EEE87128-BAB3-473A-9051-E1FDF2F06BC2}
+		{26078473-A315-41D6-BCC3-6CCD00F61FD5} = {EE131A9E-0026-49D2-B3DA-0F38408217B5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {664BE94B-1CAD-40BF-961C-A1297F8360E7}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://salesprojects.visualstudio.com/
+		SccLocalPath0 = .
+	EndGlobalSection
+EndGlobal
