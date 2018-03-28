@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INSSBOT.CrossCutting.IoC", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INSSBOT.Application", "INSSBOT.Application\INSSBOT.Application.csproj", "{26078473-A315-41D6-BCC3-6CCD00F61FD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INSSBOT.Services.ConsoleApp", "INSSBOT.Services.ConsoleApp\INSSBOT.Services.ConsoleApp.csproj", "{608FE6E0-9E3D-466B-B841-4CD991E71E33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{26078473-A315-41D6-BCC3-6CCD00F61FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26078473-A315-41D6-BCC3-6CCD00F61FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26078473-A315-41D6-BCC3-6CCD00F61FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{608FE6E0-9E3D-466B-B841-4CD991E71E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608FE6E0-9E3D-466B-B841-4CD991E71E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608FE6E0-9E3D-466B-B841-4CD991E71E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608FE6E0-9E3D-466B-B841-4CD991E71E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,14 +64,9 @@ Global
 		{8F943263-CB96-4EC4-B98B-E9925214DE03} = {74A558BC-6CC2-4E51-AC8F-66401C180C65}
 		{A3B65435-7147-4991-909A-B6CEE35D9B9D} = {EEE87128-BAB3-473A-9051-E1FDF2F06BC2}
 		{26078473-A315-41D6-BCC3-6CCD00F61FD5} = {EE131A9E-0026-49D2-B3DA-0F38408217B5}
+		{608FE6E0-9E3D-466B-B841-4CD991E71E33} = {06723239-0A86-41D2-B969-A3432D63FD10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {664BE94B-1CAD-40BF-961C-A1297F8360E7}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 1
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://salesprojects.visualstudio.com/
-		SccLocalPath0 = .
 	EndGlobalSection
 EndGlobal
