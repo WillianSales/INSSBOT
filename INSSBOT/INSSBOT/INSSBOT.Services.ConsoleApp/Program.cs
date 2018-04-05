@@ -1,9 +1,4 @@
-﻿using Microsoft.Owin.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace INSSBOT.Services.ConsoleApp
 {
@@ -11,16 +6,26 @@ namespace INSSBOT.Services.ConsoleApp
     {
         static void Main(string[] args)
         {
-            //http://localhost:12345
-            using (WebApp.Start<Startup>("http://localhost:80"))
+
+            Bot.Api.OnMessage += Bot_OnMessage;
+            Bot.Api.OnMessageEdited += Bot_OnMessage;
+
+            Bot.Api.StartReceiving();
+
+            Console.WriteLine("Serviço iniciado!");
+
+            Console.ReadLine();
+
+            Bot.Api.StopReceiving();
+        }
+
+        private static void Bot_OnMessage(object sender, Telegram.Bot.Args.MessageEventArgs e)
+        {
+            if (e.Message.Type == Telegram.Bot.Types.Enums.MessageType.TextMessage)
             {
-                Bot.Api.SetWebhookAsync("https://26fda9b6.ngrok.io").Wait();
+                Console.WriteLine(e.Message.Text);
 
-                Console.WriteLine("Server Started");
-
-                Console.ReadLine();
-
-                Bot.Api.DeleteWebhookAsync().Wait();
+                Bot.Api.SendTextMessageAsync(e.Message.Chat.Id, $"Teste resposta {e.Message.Text}");
             }
         }
     }
