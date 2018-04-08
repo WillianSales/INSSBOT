@@ -4,17 +4,18 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{26078473-A315-41D6-BCC3-6CCD00F61FD5}</ProjectGuid>
+    <ProjectGuid>{A3B65435-7147-4991-909A-B6CEE35D9B9D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>INSSBOT.Application</RootNamespace>
-    <AssemblyName>INSSBOT.Application</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <RootNamespace>INSSBOT.CrossCutting.IoC</RootNamespace>
+    <AssemblyName>INSSBOT.CrossCutting.IoC</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SimpleInjector, Version=4.1.1.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.1.1\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,8 +48,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BootStrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\INSSBOT.Application\INSSBOT.Application.csproj">
+      <Project>{26078473-A315-41D6-BCC3-6CCD00F61FD5}</Project>
+      <Name>INSSBOT.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\INSSBOT.Domain\INSSBOT.Domain.csproj">
+      <Project>{3B373B86-32D3-40AB-811E-534EAA5DF1BA}</Project>
+      <Name>INSSBOT.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\INSSBOT.Repository\INSSBOT.Repository.csproj">
+      <Project>{8F943263-CB96-4EC4-B98B-E9925214DE03}</Project>
+      <Name>INSSBOT.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
